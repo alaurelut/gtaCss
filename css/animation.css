@@ -1,0 +1,41 @@
+body{
+	background-image: url(../img/map.jpg);
+	height: 100%;
+	width: 100%;
+
+	-webkit-animation: 
+		background 2s 1.5s linear;
+}
+
+#car{
+	background-image: url(../img/car.png);
+	background-size: 60px;
+	background-repeat: no-repeat;
+	-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 300px;
+	left: 200px;
+
+	-webkit-animation: 
+		car 3s 0s linear;
+}
+
+
+
+@-webkit-keyframes car {
+	0% { top: 300px; }
+	10% { top: 305px; }
+	25% { top: 330px; }
+	50% { top: 420px; }
+	75% { top: 580px; }
+	100% { top: 800px; }
+}
+
+@-webkit-keyframes background {
+	0% { background-position-y: 0px;}
+	100% { background-position-y: -200px; }
+}
