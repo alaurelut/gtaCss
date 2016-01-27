@@ -16,7 +16,6 @@ document.body.onkeydown = function(event) {
     		setTimeout(function(){
     			car.className = ""
     			car.classList.add("car-to-bottom");
-
     		}, 1000);
 
     	}else{
@@ -34,7 +33,6 @@ document.body.onkeydown = function(event) {
     		setTimeout(function(){
     			car.className = ""
     			car.classList.add("car-to-left");
-    			
     		}, 1000);
     	}else{
         	car.classList.add("car-to-left");
@@ -43,7 +41,7 @@ document.body.onkeydown = function(event) {
     } else if (keycode == 38) {
 
         car.classList.add("car-to-top");
-        
+
     }
 
 };
