@@ -1,0 +1,5 @@
+object.onkeydown=function(){
+
+	
+	
+};
