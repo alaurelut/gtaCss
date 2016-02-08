@@ -2,7 +2,9 @@ body {
     background-image: url(../img/map.jpg);
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
+
 
 #car {
     background-image: url(../img/car.png);
@@ -11,7 +13,7 @@ body {
     width: 60px;
     height: 30px;
     position: absolute;
-    top: 300px;
+    top: 320px;
     left: 200px;
 }
 
@@ -48,20 +50,54 @@ body {
 
 
 
-
-
-/*car-to-final{
-    transform: rotate(-360deg);
-}*/
-
-/*.car-to-right-reverse {
-    transform: rotate(-180deg);
-}
-
-.car-to-top-reverse {
-    transform: rotate(-270deg);
-}*/
-
 .car-to-bottom-reverse {
     transform: rotate(-90deg);
+}
+
+
+#taxi {
+    background-image: url(../img/taxi.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    transform: rotate(0deg);
+    animation: taxi 10s infinite;
+}
+
+
+@-webkit-keyframes taxi {
+    0%   {left: 800px;top: 300px;transform: rotate(0deg);}
+    25%  {left: 200px;top: 300px}
+    50%  { left: 200px;top: 750px;transform: rotate(-90deg);}
+    75%  { left: 800px;top: 750px;transform: rotate(-180deg);}
+    100% {left: 800px;top: 300px;transform: rotate(-270deg); }
+}
+
+
+#police {
+    background-image: url(../img/police.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 300px;
+    left: 2400px;
+    transform: rotate(0deg);
+    animation: police 25s infinite;
+}
+
+
+@-webkit-keyframes police {
+    0%   {left: 2400px;top: 300px;transform: rotate(0deg);}
+    20%  {left: 200px;top: 300px}
+    30%  { left: 200px;top: 1075px;transform: rotate(-90deg);}
+    60%  { left: 3000px;top: 1075px;transform: rotate(-180deg);}
+    85%  { left: 3000px;top: 450px;transform: rotate(-270deg);}
+    95%  { left: 2400px;top: 450px;transform: rotate(-360deg);}
+    100% {left: 2400px;top: 300px;transform: rotate(-270deg); }
 }
